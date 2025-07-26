@@ -28,6 +28,8 @@ body {
 .main-content{
     grid-area: 2 / 2 / 3 / 3;
     background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 .sidebar li{
     list-style: none;
@@ -109,4 +111,48 @@ body {
     border: none;
     background-color: #1992D4;
     color: #FFFFFF;
+}
+.main-content .content{
+    padding: 20px;
+}
+.main-content .content > h4{
+    width: 100%;
+}
+.main-content .content > h4,
+.main-content .content .cards > h4,
+.main-content .content .cards > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.main-content .content > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 10px;
+    gap: 20px;
+    height: 90%;
+}
+.main-content .content .cards{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: small;
+    padding: 6%;
+    border-left: 8px solid #F0B429;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.main-content .content .cards p{
+    color: #636363;
+}
+.network_node{
+    transform: rotate(180deg);
+}
+.main-content .content .cards .icons{
+    float: right;
+    margin-top: auto;
+    margin-left: auto;
+}
+.main-content .content .cards .icons *{
+    font-size: medium;
 }
