@@ -142,7 +142,8 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.main-content .content .cards p{
+.main-content .content .cards p,
+.main-content .announcements p{
     color: #636363;
 }
 .network_node{
@@ -155,4 +156,60 @@ body {
 }
 .main-content .content .cards .icons *{
     font-size: medium;
+    padding-left: 6px;
+}
+.main-content .right-sidebar{
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.main-content .right-sidebar h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.main-content .announcements{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 15px;
+    margin-top: 10px;
+}
+.main-content .announcements *{
+    margin: 0px;
+}
+.main-content .announcements .announcement{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.main-content .announcements .announcement:last-child{
+    border-bottom: none;
+}
+.main-content .announcements .announcement:first-child{
+    padding-top: 2px;
+}
+.main-content .trendings{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 16px;
+}
+.main-content .trendings .trending{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.main-content .trendings .trending p{
+    margin: 0px;
+    color: #636363;
+    padding-left: 12px;
+}
+.main-content .trendings .trending p:first-child{
+    font-weight: bold;
+}
+.main-content .trendings .trending > div{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.main-content .trendings .trending img{
+    border-radius: 50%;
 }
